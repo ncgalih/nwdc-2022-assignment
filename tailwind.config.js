@@ -5,7 +5,12 @@ module.exports = {
         "./src/**/*.{js,jsx}",
     ],
     theme: {
-        extends:{},
+        extends:{
+            height:{
+                '1/10': '10%',
+                '9/10': '90%',
+            }
+        }
     },
     plugins: [
         autoprefixer,

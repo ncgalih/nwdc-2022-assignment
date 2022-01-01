@@ -1,7 +1,7 @@
 function Navbar(){
     return(
-        <nav className="flex flex-row bg-white py-2 px-3 shadow">
-            <p className="text-red-700">Hello</p>
+        <nav className="flex flex-row bg-white px-6 shadow h-[7%]">
+            <p className="text-red-700 my-auto">Hello</p>
         </nav>
     )
 }
