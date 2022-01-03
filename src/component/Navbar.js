@@ -12,10 +12,10 @@ function Navbar({activePage, handleNav}){
     }
     const NavGroup = () => {
         return(<>
-            <Navlink title='Home'       isActive={activePage==0} onClick={handleNav[0]}/>
-            <Navlink title='Motivasi'   isActive={activePage==1} onClick={handleNav[1]}/>
-            <Navlink title='Ekspektasi' isActive={activePage==2} onClick={handleNav[2]}/>
-            <Navlink title='TechStack'  isActive={activePage==3} onClick={handleNav[3]}/>
+            <Navlink title='Home'       isActive={activePage===0} onClick={handleNav[0]}/>
+            <Navlink title='Motivasi'   isActive={activePage===1} onClick={handleNav[1]}/>
+            <Navlink title='Ekspektasi' isActive={activePage===2} onClick={handleNav[2]}/>
+            <Navlink title='TechStack'  isActive={activePage===3} onClick={handleNav[3]}/>
             </>)
     }
     const MenuBtn = () => {

@@ -6,7 +6,7 @@ function Home({data, handleNext}){
                     <h3 className="text-gray-600 text-lg">Hello, I am</h3>
                     <h1 className="text-gray-800 text-xl mb-6">{data.name}</h1>
                 </div>
-                <img src={data.profile} className='w-48 h-48 mx-auto mb-6'/>           
+                <img src={data.profile} alt='profile' className='w-48 h-48 mx-auto mb-6'/>           
                 <p className="text-gray-700 text-base">{data.text}</p>
             </main>
             <button 

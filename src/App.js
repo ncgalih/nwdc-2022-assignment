@@ -26,6 +26,7 @@ function App() {
       case 1 : return(<Content data={data.motivasi}   handleNext={handleNav[2]} />)
       case 2 : return(<Content data={data.ekspetasi}  handleNext={handleNav[3]} />)
       case 3 : return(<Content data={data.techstack}  handleNext={handleNav[0]} />)
+      default: return null
     }
   }
 

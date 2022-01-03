@@ -2,7 +2,7 @@ function Content({data, handleNext}){
     const Icon = () => {
         if(data.img){
             return (<div className="mt-6 flex flex-col md:flex-row">
-                    {data.img.map(img => <img src={img} className="h-32 w-fit mx-auto md:mx-3 sm:h-36" />)}
+                    {data.img.map(img => <img src={img} alt="techstack" className="h-32 w-fit mx-auto md:mx-3 sm:h-36" />)}
                     </div>)
         } else return null
     }
