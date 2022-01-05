@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+.screen {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}

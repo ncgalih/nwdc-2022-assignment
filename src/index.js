@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+document.documentElement.style.setProperty('--vh',`${window.innerHeight * 0.01}px`);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

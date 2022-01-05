@@ -5,11 +5,11 @@ import { useState } from 'react'
 
 const data = require('./content.json');
 
-data.home.profile  = require('./assets/avatar.png');
+data.home.profile  = {src: require('./assets/profil.png'), alt: 'foto profil'};
 data.techstack.img = [
-  require('./assets/react_icon.png'),
-  require('./assets/tailwind.png'),
-  require('./assets/node_icon.png')
+  {src: require('./assets/react_icon.png'), alt: 'react js'},
+  {src: require('./assets/tailwind.png'),   alt: 'tailwind css'},
+  {src: require('./assets/node_icon.png'),  alt: 'node js'}
 ];
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className='h-screen'>
+    <div className='screen'>
       <Navbar activePage={page} handleNav={handleNav} />
       <Page />
     </div>

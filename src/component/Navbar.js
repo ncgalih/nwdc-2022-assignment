@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState} from 'react';
 
 function Navbar({activePage, handleNav}){
     const [isOpen, setOpen] = useState(false);
@@ -35,8 +35,8 @@ function Navbar({activePage, handleNav}){
         </nav>
         
         <div className={isOpen? "" : "hidden"}>
-        <div className="fixed grid bg-white h-4/6 w-full h-fit">
-            <div className="grid grid-col mt-4 mb-6 space-y-3 justify-center text-center">
+        <div className="absolute grid bg-white w-full">
+            <div className="grid grid-col mt-4 mb-6 space-y-3 text-center">
                 <NavGroup />
             </div>
             <div className="mb-8 mt-auto flex justify-center">
