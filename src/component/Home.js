@@ -1,4 +1,4 @@
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 function Home({data, handleNext}){
     return (
