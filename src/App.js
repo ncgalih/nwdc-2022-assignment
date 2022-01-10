@@ -31,10 +31,10 @@ function App() {
   }
 
   return (
-    <div className='screen'>
+    <>
       <Navbar activePage={page} handleNav={handleNav} />
       <Page />
-    </div>
+    </>
   );
 }
 

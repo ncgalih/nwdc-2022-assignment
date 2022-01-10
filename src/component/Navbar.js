@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import DarkMode from './DarkMode';
 
 function Navbar({activePage, handleNav}){
     const [isOpen, setOpen] = useState(false);
@@ -30,8 +31,11 @@ function Navbar({activePage, handleNav}){
         <>
         <nav className="flex bg-white px-6 shadow justify-between h-[7%]">
             <p className="text-red-700 my-auto" onClick={handleNav[0]}>NcGalih</p>
-            <div className='hidden sm:flex flex-row my-auto space-x-4'><NavGroup /></div>       
+            <div className='hidden sm:flex flex-row my-auto space-x-4'><NavGroup /></div>
+            <div className='space-x-3 my-auto'>
+            <DarkMode />       
             <MenuBtn />
+            </div>
         </nav>
         
         <div className={isOpen? "" : "hidden"}>

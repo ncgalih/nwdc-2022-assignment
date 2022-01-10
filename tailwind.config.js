@@ -1,16 +1,13 @@
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
+    darkMode: 'class',
     content: [
         "./src/**/*.{js,jsx}",
+        "./public/index.html"
     ],
     theme: {
-        extends:{
-            height:{
-                '1/10': '10%',
-                '9/10': '90%',
-            }
-        }
+        extends:{}
     },
     plugins: [
         autoprefixer,

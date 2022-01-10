@@ -8,7 +8,7 @@ function Home({data, handleNext}){
                 <div className="mt-8 md:my-auto">           
                     <div className="flex flex-col">
                         <Slide><h3 className="text-gray-600 text-lg">Hello, I am</h3></Slide>
-                        <Fade><h1 className="text-gray-800 text-xl mb-6">{data.name}</h1></Fade>
+                        <Fade><h1 className="text-gray-800 text-2xl mb-6">{data.name}</h1></Fade>
                     </div>
                     <Fade delay={700}><p className="text-gray-700 text-base">{data.text}</p></Fade>
                 </div> 
